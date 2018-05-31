@@ -2,7 +2,7 @@
 
 Syntax highlighting and code completion for Sublime Text 3 (with Open Sim Support)
 
-#Installation
+# Installation
 
 ## Using Sublime Package Control
 
@@ -32,7 +32,7 @@ Search for the package `sublime3-lsl-syntax` and double click on it.
 
 That's it, `sublime3-lsl-syntax` is installed and ready to go.
 
-##Using Git
+## Using Git
 
 You can locate your Sublime Text `Packages` directory. When inside the `Packages` directory type:
 
