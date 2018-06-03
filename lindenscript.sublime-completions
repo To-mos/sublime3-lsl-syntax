@@ -1110,9 +1110,9 @@
         { "trigger": "llWind",                       "contents": "llWind( ${1:vector offset} )" },
         { "trigger": "llXorBase64",                  "contents": "llXorBase64( ${1:string str1}, ${2:string str2} )" },
     //  keyword
-        "default",
+        { "trigger": "default", "contents": "default\n{\n\tstate_entry( integer ${1:start_param} )\n\t{\n\t\t$0\n\t}\n}" },
         "return",
-        { "trigger": "do",      "contents": "do\n{\n\t$0\n}\nwhile ( ${1:condition} );" },
+        { "trigger": "do",      "contents": "do\n{\n\t$0\n}\nwhile( ${1:condition} );" },
         { "trigger": "else",    "contents": "else\n{\n\t$0\n}" },
         { "trigger": "else if", "contents": "else if( ${1:condition} )\n{\n$0\n}" },
         { "trigger": "for",     "contents": "for( ${1:start}; ${3:condition}; ${3:step} )\n{\n$0\n}" },
