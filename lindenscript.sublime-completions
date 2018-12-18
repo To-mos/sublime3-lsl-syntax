@@ -1449,6 +1449,9 @@
             "trigger": "llGetNumberOfSides",          
             "contents": "llGetNumberOfSides()"
         }, {
+            "trigger": "llGetObjectAnimationNames",
+            "contents": "llGetObjectAnimationNames()"
+        }, {
             "trigger": "llGetObjectDesc",             
             "contents": "llGetObjectDesc()"
         }, {
@@ -2169,6 +2172,9 @@
             "trigger": "llStartAnimation",            
             "contents": "llStartAnimation( ${1:string anim} )"
         }, {
+            "trigger": "llStartObjectAnimation",
+            "contents": "llStartObjectAnimation( ${1:string anim} )"
+        }, {
             "trigger": "llStopAnimation",             
             "contents": "llStopAnimation( ${1:string anim} )"
         }, {
@@ -2180,6 +2186,9 @@
         }, {
             "trigger": "llStopMoveToTarget",          
             "contents": "llStopMoveToTarget()"
+        }, {
+            "trigger": "llStopObjectAnimation",
+            "contents": "llStopObjectAnimation( ${1:string anim} )"
         }, {
             "trigger": "llStopSound",                 
             "contents": "llStopSound()"
