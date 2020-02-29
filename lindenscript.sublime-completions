@@ -299,6 +299,7 @@
         "GRAVITY_MULTIPLIER",
         // H
         "HORIZONTAL",
+        "HTTP_ACCEPT",
         {
             "trigger": "HTTP_BODY_MAXLENGTH",
             "contents": "HTTP_BODY_MAXLENGTH, ${1:integer length}, "
@@ -334,6 +335,7 @@
         "INVENTORY_NOTECARD",
         "INVENTORY_OBJECT",
         "INVENTORY_SCRIPT",
+        "INVENTORY_SETTING",
         "INVENTORY_SOUND",
         "INVENTORY_TEXTURE",
         "INVALID_LINK",
@@ -429,6 +431,7 @@
         "OBJECT_RUNNING_SCRIPT_COUNT",
         "OBJECT_SCRIPT_MEMORY",
         "OBJECT_SCRIPT_TIME",
+        "OBJECT_SELECT_COUNT",
         "OBJECT_SERVER_COST",
         "OBJECT_STREAMING_COST",
         "OBJECT_TEMP_ATTACHED",
@@ -832,6 +835,19 @@
         "SIT_INVALID_LINK",
         "SIT_NO_ACCESS",
         "SIT_INVALID_OBJECT",
+        "SKY_AMBIENT ",
+        "SKY_CLOUDS",
+        "SKY_DOME",
+        "SKY_GAMMA",
+        "SKY_GLOW",
+        "SKY_LIGHT",
+        "SKY_MOON",
+        "SKY_PLANET",
+        "SKY_REFRACTION",
+        "SKY_STAR_BRIGHTNESS",
+        "SKY_SUN",
+        "SKY_TRACKS",
+        "SKY_TEXTURE_DEFAULTS",
         "SMOOTH",
         "SQRT2",
         "STATUS_BLOCK_GRAB",
@@ -924,6 +940,13 @@
         "VEHICLE_VERTICAL_ATTRACTION_TIMESCALE",
         "VERTICAL",
         "WANDER_PAUSE_AT_WAYPOINTS",
+        "WATER_BLUR_MULTIPLIER",
+        "WATER_FOG",
+        "WATER_FRESNEL",
+        "WATER_NORMAL_SCALE",
+        "WATER_REFRACTION",
+        "WATER_TEXTURE_DEFAULTS",
+        "WATER_WAVE_DIRECTION",
         // X
         "XP_ERROR_NONE",
         "XP_ERROR_THROTTLED",
@@ -1338,6 +1361,12 @@
             "trigger": "llGetDate",                   
             "contents": "llGetDate()"
         }, {
+            "trigger": "llGetDayLength",                   
+            "contents": "llGetDayLength()"
+        }, {
+            "trigger": "llGetDayOffset",                   
+            "contents": "llGetDayOffset()"
+        }, {
             "trigger": "llGetDisplayName",            
             "contents": "llGetDisplayName( ${1:key id} )"
         }, {
@@ -1346,6 +1375,9 @@
         }, {
             "trigger": "llGetEnv",                    
             "contents": "llGetEnv( ${1:string name} )"
+        }, {
+            "trigger": "llGetEnvironment",                    
+            "contents": "llGetEnvironment()"
         }, {
             "trigger": "llGetForce",                  
             "contents": "llGetForce()"
@@ -1434,6 +1466,12 @@
             "trigger": "llGetMinScaleFactor",         
             "contents": "llGetMinScaleFactor()"
         }, {
+            "trigger": "llGetMoonDirection",         
+            "contents": "llGetMoonDirection()"
+        }, {
+            "trigger": "llGetMoonRotation",         
+            "contents": "llGetMoonRotation()"
+        }, {
             "trigger": "llGetNextEmail",              
             "contents": "llGetNextEmail( ${1:string address}, ${2:string subject} )"
         }, {
@@ -1521,14 +1559,32 @@
             "trigger": "llGetRegionCorner",           
             "contents": "llGetRegionCorner()"
         }, {
+            "trigger": "llGetRegionDayLength",           
+            "contents": "llGetRegionDayLength()"
+        }, {
+            "trigger": "llGetRegionDayOffset",           
+            "contents": "llGetRegionDayOffset()"
+        }, {
             "trigger": "llGetRegionFlags",            
             "contents": "llGetRegionFlags()"
         }, {
             "trigger": "llGetRegionFPS",              
             "contents": "llGetRegionFPS()"
         }, {
+            "trigger": "llGetRegionMoonDirection",              
+            "contents": "llGetRegionMoonDirection()"
+        }, {
+            "trigger": "llGetRegionMoonRotation",              
+            "contents": "llGetRegionMoonRotation()"
+        }, {
             "trigger": "llGetRegionName",             
             "contents": "llGetRegionName()"
+        }, {
+            "trigger": "llGetRegionSunDirection",             
+            "contents": "llGetRegionSunDirection()"
+        }, {
+            "trigger": "llGetRegionSunRotation",             
+            "contents": "llGetRegionSunRotation()"
         }, {
             "trigger": "llGetRegionTimeDilation",     
             "contents": "llGetRegionTimeDilation()"
@@ -1574,6 +1630,9 @@
         }, {
             "trigger": "llGetSunDirection",           
             "contents": "llGetSunDirection()"
+        }, {
+            "trigger": "llGetSunRotation",           
+            "contents": "llGetSunRotation()"
         }, {
             "trigger": "llGetTexture",                
             "contents": "llGetTexture( ${1:integer face} )"
@@ -1866,6 +1925,9 @@
             "trigger": "llRemoveVehicleFlags",        
             "contents": "llRemoveVehicleFlags( ${1:integer flags} )"
         }, {
+            "trigger": "llReplaceAgentEnvironment",        
+            "contents": "llReplaceAgentEnvironment()"
+        }, {
             "trigger": "llRequestAgentData",          
             "contents": "llRequestAgentData( ${1:key id}, ${2:integer data} )"
         }, {
@@ -1988,6 +2050,9 @@
         }, {
             "trigger": "llSensorRepeat",              
             "contents": "llSensorRepeat( ${1:string name}, ${2:key id}, ${3:integer type}, ${4:float range}, ${5:float arc}, ${6:float rate} )"
+        }, {
+            "trigger": "llSetAgentEnvironment",              
+            "contents": "llSetAgentEnvironment()"
         }, {
             "trigger": "llSetAlpha",                  
             "contents": "llSetAlpha( ${1:float alpha}, ${2:integer face} )"
