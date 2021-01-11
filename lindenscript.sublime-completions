@@ -1727,6 +1727,9 @@
             "trigger": "llKey2Name",                  
             "contents": "llKey2Name( ${1:key id} )"
         }, {
+            "trigger": "llLinear2sRGB",                  
+            "contents": "llLinear2sRGB( ${1:vector color} )"
+        }, {
             "trigger": "llLinkParticleSystem",        
             "contents": "llLinkParticleSystem( ${1:integer link}, ${2:list rules} )"
         }, {
@@ -2236,6 +2239,9 @@
         }, {
             "trigger": "llStartAnimation",            
             "contents": "llStartAnimation( ${1:string anim} )"
+        }, {
+            "trigger": "llsRGB2Linear",            
+            "contents": "llsRGB2Linear( ${1:vector srgb} )"
         }, {
             "trigger": "llStartObjectAnimation",
             "contents": "llStartObjectAnimation( ${1:string anim} )"
